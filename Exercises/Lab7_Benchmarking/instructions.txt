@@ -1,0 +1,16 @@
+# Instructions for Lab 7: Performance Benchmarking
+
+This lab benchmarks t5-small with real, computed metrics:
+  - Inference latency with warmup, mean, median, p95/p99 percentiles, and throughput
+  - BLEU and ROUGE (1, 2, L) evaluated on 50 DialogSum test samples
+  - Resource usage: model param size, serialized size, process RSS, GPU memory
+
+Prerequisites:
+  - The local model must exist at `../local_models/t5-small`
+  - The DialogSum test set must exist at `../local_datasets/dialogsum/test.csv`
+    (run `python ../download_datasets.py` if missing)
+
+Steps:
+1. Install dependencies: `pip install -r requirements.txt`
+2. Execute with: `python benchmark.py`
+3. Review the three output sections: Latency, Evaluation Metrics, and Resource Usage.
