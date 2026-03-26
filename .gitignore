@@ -3,6 +3,7 @@
 CLAUDE.md
 
 .DS_Store
+__pycache__/
 
 # Large ML artifacts (GitHub 100MB limit; regenerate locally in labs)
 **/checkpoint-*/optimizer.pt
