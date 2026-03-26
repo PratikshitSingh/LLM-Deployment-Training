@@ -3,3 +3,13 @@
 CLAUDE.md
 
 .DS_Store
+
+# Large ML artifacts (GitHub 100MB limit; regenerate locally in labs)
+**/checkpoint-*/optimizer.pt
+**/checkpoint-*/model.safetensors
+**/pruned_model/model.safetensors
+**/quantized_model_bfloat16/model.safetensors
+**/quantized_model_int8/model_int8.pt
+**/distilled_student/model.safetensors
+**/summarisation_results/checkpoint-*/optimizer.pt
+**/summarisation_results/checkpoint-*/adapter_model.safetensors
